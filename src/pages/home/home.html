@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      FlashLight
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <span>The Flashlight is: {{isOn ? 'ON' : 'OFF'}}</span>
+  </ion-item>
+  <button ion-button (tap)="switchOn()">Switch on</button>
+  <button ion-button (tap)="switchOff()">Switch off</button>
+  <button ion-button (tap)="toggle()">Toggle</button>
+</ion-content>
